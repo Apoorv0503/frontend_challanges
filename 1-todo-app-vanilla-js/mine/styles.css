@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;  /* Align content vertically */
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 8rem;
+}
+
+.todoForm {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 2rem;
+    margin-bottom: 1rem; /* Add some space below the form */
+}
+
+.todoInput {
+    width: 80%;
+    padding: 5px 12px;
+}
+
+.todoSubmit {
+    width: 20%;
+    padding: 4px;
+    background-color: rgb(96, 233, 96);
+    text-decoration: none;
+}
+
+/* List */
+.todoList {
+    width: 50%; /* Set width similar to the form for consistency */
+    padding: 5px;
+    list-style: none;
+}
+
+.todoList li {
+    padding: 5px 10px;
+    margin-bottom: 5px; /* Add some space between list items */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* justify-content: space-between; */
+}
+
+.todoList li span {
+    padding: 5px;
+    flex: 1;
+}
+
+
+
+.todoList button {
+    margin: 5px;
+}

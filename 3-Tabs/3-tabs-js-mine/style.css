@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.tabLink{
+    width: 15rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* as soon as an active class is added, an extra style is applied to the selected tab button */
+.tabLink.active{
+    background-color: green;
+    color: white;
+}
+
+/* initially display should be none for tabContent */
+.tabContent{
+    padding: 2rem;
+   margin: 2rem 0rem;
+   display: none;
+}
+
+.tabContent p{
+    margin: 1rem 0rem;
+}
+
+/* as soon as an active class is added, an extra style is applied to the selected tab button's content */
+.tabContent.active{
+   display: block;
+}
+
+

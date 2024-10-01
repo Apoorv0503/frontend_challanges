@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-tabs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="tabContainer"></div>
+
+    <div class="tabContentContainer"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+<!-- 
+solution flow is this:
+
+1. For Config driven UI/ scalability -> use the provided object to populate the tabs and thier content divs, and make all content's display:hidden initially
+2. Create a global variable to keep track of active-tab, now listen for the click event over any tab
+3. Check if currently selected tab is not already active-tab, if no then do this.
+4. Apply styling on the active tab and its content's div (ie. some bg color to the tab and display:block for the content div )
+
+-->

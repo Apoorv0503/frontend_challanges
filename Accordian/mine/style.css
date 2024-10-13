@@ -1,0 +1,46 @@
+/* basic reset for browser applied styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;  horizonatally centre*/
+    margin-top: 5rem;
+}
+
+.accordion{
+    width: 60%;
+    text-align:start
+    
+}
+
+.accordion-item{
+    padding: 1rem 2rem;
+    margin: 2rem 1rem;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.accordion-header{
+    cursor: pointer;
+    margin: 1rem 0rem;
+}
+
+.accordion-content{
+    display: none;
+}
+
+.accordion-item:hover{
+    background-color: rgb(206, 248, 248);
+}
+
+.accordion-item.active{
+    background-color: rgb(233, 237, 237);
+}

@@ -114,3 +114,10 @@ body{
         height: 100%;
     }
 }
+
+/* remove +/- from number input elements */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -61,7 +61,7 @@ function CountdownTimer() {
     const { name, value } = e.target;
     setTime((prevTime) => ({
       ...prevTime,
-      [name]: Math.max(0, Math.min(Number(value), 59)), // Ensures valid range
+      [name]: Math.max(0, Math.min(Number(value), 59)), // Ensures valid range, entered value should be between [0,59]
     }));
   };
 
